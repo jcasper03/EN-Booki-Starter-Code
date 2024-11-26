@@ -33,7 +33,8 @@ body {
     padding-right: 10px;
 }
 
-.fa-info {
+.fa-info,
+.fa-chart-line {
     color: #0065FC;
 }
 
@@ -145,6 +146,7 @@ body {
 .search {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .card {
@@ -720,9 +722,6 @@ body {
 
     }
 
-    .fa-chart-line {
-        color: #0065FC;
-    }
 
     .accommodation-cards .card,
     .things-to-do-cards .card {
