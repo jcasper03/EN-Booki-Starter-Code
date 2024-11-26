@@ -15,7 +15,8 @@ body {
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid, .fa-regular {
+.fa-solid,
+.fa-regular {
     color: black;
 }
 
@@ -32,7 +33,7 @@ body {
     padding-right: 10px;
 }
 
-.fa-info{
+.fa-info {
     color: #0065FC;
 }
 
@@ -47,10 +48,10 @@ body {
 }
 
 .icon-container {
-    width: 50px; 
-    height: 49px; 
+    width: 50px;
+    height: 49px;
     background-color: #F2F2F2;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1px;
@@ -59,9 +60,9 @@ body {
 }
 
 .icon-container2 {
-    width: 24px; 
-    height: 24px; 
-    display: flex; 
+    width: 24px;
+    height: 24px;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -81,7 +82,7 @@ body {
     font-weight: 400;
     margin-top: 5px;
     margin-bottom: 30px;
-   
+
 }
 
 .results {
@@ -218,8 +219,8 @@ body {
     border: none;
 }
 
-.fa-search{
-    display:none !important;
+.fa-search {
+    display: none !important;
 }
 
 .booki-logo {
@@ -233,20 +234,20 @@ body {
 .accommodation-and-popular {
     display: flex;
     gap: 40px;
-    flex-direction: row; /* Default to row on larger screens */
+    flex-direction: row;
+}
+
+/* For smaller screens, layout switches to column */
+@media (max-width: 1024px) {
+    .accommodation-and-popular {
+        flex-direction: column;
     }
-    
-    /* For smaller screens, layout switches to column */
-    @media (max-width: 1024px) {
-        .accommodation-and-popular {
-            flex-direction: column;  /* Stack the accommodation and popular sections on small screens */
-        }
-        
-        /* Ensure the Popular section spans the full width */
-        .popular {
-            width: 100%; /* Make the Popular section take full width on smaller screens */
-        }
-    
+
+
+    .popular {
+        width: 100%;
+    }
+
 }
 
 .accommodation-and-popular section {
@@ -271,27 +272,35 @@ body {
     width: 811px;
 }
 
-    .accommodation-cards .card {
-        flex: 1 1 calc(33.33% - 30px);  /* This will ensure 3 cards per row with space between */
-        box-sizing: border-box;
-        height: auto;  /* Let height adjust based on content */
-    }
+.accommodation-cards .card {
+    flex: 1 1 calc(33.33% - 30px);
+    /* This will ensure 3 cards per row with space between */
+    box-sizing: border-box;
+    height: auto;
+    /* Let height adjust based on content */
+}
 
 .accommodation-cards {
     display: flex;
-    flex-wrap: wrap; /* Allow the cards to wrap */
+    flex-wrap: wrap;
+    /* Allow the cards to wrap */
     gap: 30px;
-    width: 100%; /* Ensure it takes full width of the container */
+    width: 100%;
+    /* Ensure it takes full width of the container */
 }
 
 
 .accommodation-cards img {
-    width: 100%;         /* Make the image responsive, filling the card's width */
-    height: 124px;        /* Maintain the image's aspect ratio */
-    max-width: 100%;     /* Ensure the image doesn't stretch beyond its container */
+    width: 100%;
+    /* Make the image responsive, filling the card's width */
+    height: 124px;
+    /* Maintain the image's aspect ratio */
+    max-width: 100%;
+    /* Ensure the image doesn't stretch beyond its container */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;   /* Ensure the image covers the space without distortion */
+    object-fit: cover;
+    /* Ensure the image covers the space without distortion */
 }
 
 
@@ -324,7 +333,8 @@ body {
 /****** Popular ***********/
 .popular {
 
-    width: 100%; /* Initially, set popular section to full width */
+    width: 100%;
+    /* Initially, set popular section to full width */
     flex: 1 1 100%;
     gap: 30px
 }
@@ -338,11 +348,12 @@ body {
 
 .popular-cards .card {
     display: flex;
-    margin-top: 10px; /* Reduce margin */
+    margin-top: 10px;
+    /* Reduce margin */
     width: 100%;
     margin-bottom: 30px;
-  
-    
+
+
 }
 
 
@@ -352,7 +363,7 @@ body {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    
+
 }
 
 .popular-cards .card-content {
@@ -395,13 +406,14 @@ body {
 
 .things-to-do-cards .card {
     /* Default width and flexible sizing */
-    flex: 1 1 25%;  /* Allow cards to grow, shrink, and start at 25% width */
+    flex: 1 1 25%;
+    /* Allow cards to grow, shrink, and start at 25% width */
     background-color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
 
- 
+
 
 }
 
@@ -418,12 +430,13 @@ body {
     gap: 30px;
     justify-content: flex-start;
     width: 100%;
-    flex-wrap: nowrap; /* Prevent cards from wrapping to the next row */
+    flex-wrap: nowrap;
+    /* Prevent cards from wrapping to the next row */
     ;
 
 }
 
-.things-to-do .card-content{
+.things-to-do .card-content {
     padding-left: 10px;
 }
 
@@ -445,7 +458,7 @@ body {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
- 
+
 }
 
 .right-footer,
@@ -458,39 +471,39 @@ body {
     flex: 1;
 }
 
-.footer-link{
+.footer-link {
     text-decoration: none;
     color: black;
 }
 
-.footer-header-text{
+.footer-header-text {
     font-weight: 700;
     margin-bottom: 0px;
 }
 
 /* Add Responsive Media Queries */
-@media  (max-width: 1024px) {
-    
-    body{
+@media (max-width: 1024px) {
+
+
+    body {
         margin-left: 50px;
         margin-right: 50px;
     }
+
     /* Main Container Adjustments */
     .results-container {
-        padding: 0 30px; /* Less padding on the sides */
+        padding: 0 30px;
     }
 
     /* Accommodation Section */
     .accommodation-cards {
-
         justify-content: space-between;
     }
 
     .popular-cards .card {
         width: 30%;
-     justify-content: space-between
+        justify-content: space-between
     }
-
 
     /* Adjust Footer */
     .footer-container {
@@ -499,55 +512,58 @@ body {
     }
 
     .popular {
-        width: auto; /* Make the Popular section take full width on smaller screens */
+        width: auto;
+        /* Make the Popular section take full width on smaller screens */
     }
 
     .accommodation-and-popular {
         flex-direction: column;
-       
     }
 
-    .popular-cards{
+    .popular-cards {
         display: flex;
         gap: 30px;
     }
 
-    .accommodation{
+    .accommodation {
         width: 100%;
     }
 
-    .things-to-do-cards{
-      width: auto;
-      margin-left: 20px;
-      margin-right: 20px;
+    .things-to-do-cards {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .things-to-do .card {
-     
-     justify-content: space-between;
-     flex: 1 1 30%;  /* Reduce card width to 30% on tablets */
+
+        justify-content: space-between;
+        flex: 1 1 30%;
+        /* Reduce card width to 30% on tablets */
     }
 
-    .things-to-do img{
-    height: 200px;
+    .things-to-do img {
+        height: 200px;
     }
 
-    .things-to-do-title{
+    .things-to-do-title {
         margin-left: 20px;
     }
 
     .accommodation-cards img {
-        height: 124px;      /* Maintain image height within card */
-        object-fit: cover; /* Ensure proper cropping */
+        height: 124px;
+        /* Maintain image height within card */
+        object-fit: cover;
+        /* Ensure proper cropping */
     }
 
-    .fa-search{
-        display: none; 
+    .fa-search {
+        display: none;
     }
 
-    .footer-container{
+    .footer-container {
         margin-left: 20px;
-        margin-right:20px;
+        margin-right: 20px;
     }
 }
 
@@ -555,176 +571,186 @@ body {
 
 /* Small screens (mobile devices) */
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-body{
+    body {
         width: 100%;
-        height:100%;  
-     margin-left: 0px;
-    margin-right: 0px;
+        height: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #header {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center the items */
+    }
+
+    /* Optional: Adjust the logo size for mobile */
+    .booki-logo {
+        max-width: 120px;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+
+    #topnav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* Center the links */
+        margin-top: 1rem;
+        /* Space between logo and links */
+        gap: 70px;
+
+
+    }
+
+    .nav-link:hover {
+        border-bottom: #0065FC solid;
+        color: #0065FC;
+        border-top: none;
+
+
+    }
+
+    .nav-link {
+        margin: 1rem 0;
+        /* Space between navigation links */
+        margin-bottom: 30px;
+    }
+
+    .things-to-do-cards .card {
+        flex: 1 1 45%;
+        /* Reduce card width to 45% on mobile */
+    }
+
+    /* Optionally adjust card height on smaller screens */
+    .things-to-do-cards .card {
+        height: auto;
+        /* Let height adjust based on content */
+    }
+
+    /* Hide the text on smaller viewports */
+    .search button .button-text {
+        display: none;
+    }
+
+    .search button .fa-search {
+        display: inline-block !important;
+        /* Show the magnifying glass icon */
+    }
+
+    .search button {
+        width: 49px !important;
+        height: 49px !important;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+
+
+    .search-intro {
+        margin-top: 100px;
+
+    }
+
+
+    .filter-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        /* Space between buttons in each row */
+    }
+
+    .filter-button {
+        flex: 1 1 45%;
+        /* Make buttons take up 45% of the width */
+        min-width: 120px;
+        margin-bottom: 15px;
+
+    }
+
+    .filter-container {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .filter-text {
+        padding-left: 0px;
+    }
+
+
+    /* Change the order to display the popular section first on smaller screens */
+    .accommodation {
+        order: 2;
+        /* Move accommodation section to second */
+
+    }
+
+    .popular {
+        order: 1;
+        padding-bottom: 0px;
+        /* Move popular section to first */
+    }
+
+    .popular-cards,
+    .accommodation-cards,
+    .things-to-do-cards {
+        display: block;
+    }
+
+    .popular-cards .card,
+    .accommodation-cards .card {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accommodation-and-popular section {
+        border-radius: 0px;
+        padding-bottom: 0px;
+
+    }
+
+    .accommodation-and-popular {
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .fa-chart-line {
+        color: #0065FC;
+    }
+
+    .accommodation-cards .card,
+    .things-to-do-cards .card {
+        max-width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+    .accommodation {
+        background-color: white !important;
+        padding-top: 0px !important;
+    }
+
+    .footer-container {
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+
+    #header,
+    .search-intro,
+    .search-intro-p,
+    .filter-container,
+    .search,
+    .results {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+
 }
-
-        #header {
-            flex-direction: column;  /* Stack elements vertically */
-            align-items: center;  /* Center the items */
-        }
-    
-        /* Optional: Adjust the logo size for mobile */
-        .booki-logo {
-            max-width: 120px;
-            justify-content: center;
-            padding-left: 0px;
-        }
-
-
-        #topnav {
-            display: flex;
-            flex-direction: row;  
-            align-items: center;  /* Center the links */
-            margin-top: 1rem;  /* Space between logo and links */
-            gap: 70px;
-           
-
-        }
-
-        .nav-link:hover {
-            border-bottom: #0065FC solid;
-            color: #0065FC;
-            border-top: none;
-           
-        
-        }
-
-        .nav-link {
-            margin: 1rem 0;  /* Space between navigation links */
-           margin-bottom: 30px;
-        }
-        .things-to-do-cards .card {
-            flex: 1 1 45%;  /* Reduce card width to 45% on mobile */
-        }
-    
-        /* Optionally adjust card height on smaller screens */
-        .things-to-do-cards .card {
-            height: auto;  /* Let height adjust based on content */
-        }
-
-            /* Hide the text on smaller viewports */
-            .search button .button-text {
-                display: none;
-            }
-        
-            .search button .fa-search {
-                display: inline-block !important; /* Show the magnifying glass icon */
-            }
-
-            .search button {
-                width: 49px !important;
-                height: 49px !important;
-                border-top-left-radius: 15px;
-                border-bottom-left-radius: 15px;
-            }
-          
-
-
-            .search-intro{
-                margin-top: 100px;
-        
-            }
-
- 
-            .filter-buttons {
-                flex-direction: row;
-                justify-content: space-between;  /* Space between buttons in each row */
-            }
-        
-            .filter-button {
-                flex: 1 1 45%;  /* Make buttons take up 45% of the width */
-                min-width: 120px;
-                margin-bottom: 15px;
-                
-            }
-
-            .filter-container{
-                display: block;
-                margin-top: 0px;
-            }
-
-            .filter-text{
-                padding-left: 0px;
-            }
-
-        
-            /* Change the order to display the popular section first on smaller screens */
-            .accommodation {
-                order: 2; /* Move accommodation section to second */
-           
-            }
-        
-            .popular {
-                order: 1;
-                padding-bottom: 0px; /* Move popular section to first */
-            }
-
-            .popular-cards,
-            .accommodation-cards, 
-            .things-to-do-cards
-           {
-                display:block;
-            }
-
-            .popular-cards .card,
-            .accommodation-cards .card{
-                width: 100%;
-                justify-content: center;
-            }
-
-            .accommodation-and-popular section{
-             border-radius: 0px;
-             padding-bottom: 0px;
-             
-            }
-
-            .accommodation-and-popular{
-                margin-left: 0px;
-                margin-right: 0px;
-                
-            }
-
-            .fa-chart-line{
-                color: #0065FC;
-            }
-
-            .accommodation-cards .card,
-            .things-to-do-cards .card {
-                max-width: 100%;
-               margin-bottom: 15px;
-               
-            }
-
-            .accommodation{
-                background-color: white !important;
-                padding-top: 0px !important;
-            }
-
-            .footer-container{
-                display: block;
-                margin-left: 0px;
-                margin-right: 0px;
-            }
-
-
-    
-            #header, 
-            .search-intro,
-            .search-intro-p,
-            .filter-container, 
-            .search,
-            .results{
-                margin-right: 20px;
-                margin-left: 20px;
-            }
-
-
-        }
-        
-    
