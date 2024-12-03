@@ -3,6 +3,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 body {
     max-width: 1440px;
     margin-left: 50px;
@@ -238,10 +239,10 @@ body {
     gap: 40px;
     flex-direction: row;
 }
-ß
+
 
 .accommodation-and-popular section {
-    background-color: var(--main-bg-color);
+    background-color:  var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -555,6 +556,17 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+     .accommodation-and-popular {
+        flex-direction: column;
+        }
+    
+    
+    .popular {
+         width: 100%;
+        }
+    
+  
 }
 
 
