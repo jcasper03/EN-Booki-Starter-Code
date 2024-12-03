@@ -238,19 +238,7 @@ body {
     gap: 40px;
     flex-direction: row;
 }
-
-/* For smaller screens, layout switches to column */
-@media (max-width: 1024px) {
-    .accommodation-and-popular {
-        flex-direction: column;
-    }
-
-
-    .popular {
-        width: 100%;
-    }
-
-}
+ß
 
 .accommodation-and-popular section {
     background-color: var(--main-bg-color);
